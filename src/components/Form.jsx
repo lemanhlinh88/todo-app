@@ -6,6 +6,7 @@ const Form = (props) => {
   const todo = props.value;
   const action = props.type;
   const actionForm = props.actionForm;
+  const hideFormAction = props.hideFormAction;
   const [title, setTitle] = useState(todo ? todo.Title : "");
   const [description, setDescription] = useState(todo ? todo.Description : "");
 
@@ -40,7 +41,7 @@ const Form = (props) => {
 
       setTitle("");
       setDescription("");
-      setDate(new Date().toISOString().slice(0, 10));
+      setDate(`${year}-${month}-${day}`);
       setPiority("Normal");
     } else {
       actionForm({
@@ -50,6 +51,8 @@ const Form = (props) => {
         Date: date,
         Piority: piority,
       });
+
+      hideFormAction();
     }
   };
 

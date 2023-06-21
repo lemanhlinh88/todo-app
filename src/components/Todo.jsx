@@ -56,7 +56,12 @@ const Todo = (props) => {
       </div>
       {isShowForm && (
         <div className="todo-form">
-          <Form type={ACTIONS.EDIT} value={todo} actionForm={updateAction} />
+          <Form
+            type={ACTIONS.EDIT}
+            value={todo}
+            actionForm={updateAction}
+            hideFormAction={handleHideForm}
+          />
         </div>
       )}
     </div>

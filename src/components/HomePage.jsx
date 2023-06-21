@@ -15,9 +15,11 @@ const HomePage = () => {
   // sort
   let showToDo =
     toDoList.length !== 0
-      ? toDoList.sort(function (todo1, todo2) {
-          return new Date(todo1.Date) - new Date(todo2.Date);
-        })
+      ? toDoList
+          .map((item) => item)
+          .sort(function (todo1, todo2) {
+            return new Date(todo1.Date) - new Date(todo2.Date);
+          })
       : [];
 
   // find text in title
@@ -28,8 +30,6 @@ const HomePage = () => {
       )
     );
   }
-
-  console.log(showToDo);
 
   // get Works from local storage
   useEffect(() => {
