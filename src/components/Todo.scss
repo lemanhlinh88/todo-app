@@ -1,0 +1,55 @@
+.todo {
+  border: 1px solid #38383a;
+  margin-bottom: 10px;
+
+  .content {
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+
+    .checkbox-group {
+      display: flex;
+      justify-content: space-between;
+      gap: 10px;
+      align-items: center;
+
+      .work {
+        width: 20px;
+        height: 20px;
+      }
+    }
+
+    .btn-actions {
+      display: flex;
+      justify-content: space-between;
+      gap: 10px;
+
+      .detail {
+        background-color: #44b3cf;
+        width: 100px;
+        height: 32px;
+
+        &:hover {
+          background-color: #6ab9cd;
+        }
+      }
+
+      .delete {
+        background-color: #ff3c00;
+        width: 100px;
+        height: 32px;
+
+        &:hover {
+          background-color: #f2663b;
+        }
+      }
+    }
+  }
+
+  .todo-form {
+    padding: 30px;
+    border-top: 1px solid #38383a;
+  }
+}

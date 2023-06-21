@@ -1,0 +1,71 @@
+.form {
+  .work {
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .description-group {
+    margin-bottom: 20px;
+    .desc-label {
+      display: block;
+      margin-bottom: 4px;
+    }
+
+    .desc-input {
+      width: 100%;
+      padding: 6px 10px;
+    }
+  }
+
+  .select {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 20px;
+
+    .date {
+      width: 100%;
+      .date-label {
+        display: block;
+        margin-bottom: 4px;
+      }
+
+      .date-input {
+        display: block;
+        width: 100%;
+      }
+    }
+
+    .piority {
+      width: 100%;
+      .pio-label {
+        display: block;
+        margin-bottom: 4px;
+      }
+
+      .pio-input {
+        display: block;
+        width: 100%;
+      }
+    }
+  }
+
+  .error {
+    color: red;
+    margin-bottom: 20px;
+  }
+
+  .btn-update-create {
+    width: 100%;
+    height: 40px;
+    background-color: #4caf50;
+    font-size: 18px;
+    color: white;
+    margin-bottom: 20px;
+
+    &:hover {
+      background-color: #75c278;
+    }
+  }
+}

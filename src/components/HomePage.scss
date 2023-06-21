@@ -1,0 +1,38 @@
+.container {
+  width: 1200px;
+  display: grid;
+  grid-template-columns: 5fr 7fr;
+  background-color: white;
+  margin-left: auto;
+  margin-right: auto;
+
+  .main {
+    padding: 20px 50px;
+
+    .title {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .input-search {
+      display: block;
+    }
+
+    .input-search {
+      display: block;
+      width: 100%;
+      margin-bottom: 20px;
+      height: 36px;
+    }
+  }
+
+  .create {
+    padding: 20px 50px;
+    border-right: 1px solid #38383a;
+
+    .title {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+  }
+}
