@@ -28,7 +28,7 @@ const Form = (props) => {
   const handleSubmitData = () => {
     if (!title || !description || !date || !piority) {
       setError("Please enter your input fields");
-    } else if (new Date(date) - new Date() < -86400) {
+    } else if (new Date(date) - new Date(`${year}-${month}-${day}`) < -86400) {
       setError("Please enter a day in the future");
     } else if (action === ACTIONS.CREATE) {
       actionForm({
